@@ -1,0 +1,38 @@
+/* style.css */
+
+
+
+header {
+        background-image: url(header2.jpg);
+        background-repeat: no-repeat;
+       }
+
+div    {
+         background-color: #66cc00;
+       }
+
+
+/* Adding in "rcorners1-3 to create rounded seperation in the knowledgebase */
+
+.rcorners1 {
+    border: 5px solid #187508;
+    border-radius: 25px;
+    background: #f3f3f3;
+    padding: 20px; 
+   
+     
+}
+
+.rcorners2 {
+   border: 5px solid #187508;
+   border-radius: 30px;
+   background-color: #f6fde9;
+   padding 20px;
+}  
+
+.rcorners3 {
+   border: 5px solid #187508;
+   border-radius: 30px;
+   background-color: #f1fcde;
+   padding 20px;
+}
