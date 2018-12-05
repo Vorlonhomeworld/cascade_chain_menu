@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+<title>Form</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="container">
+<form name=details>
+<table>
+ <tr><td>First name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=text  name=fname> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last Name <input type=text name=lname></td></tr>
+  <tr><td>Phone Number <input type=text  name=phnum>&nbsp;&nbsp;&nbsp; Date of Birth <input type=text name=dob></td></tr>
+ <tr><td>SS# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=text name=ss></td></tr>
+ </table>
+<b> Enter remarks here: </b>
+<br><textarea rows="25" cols="80" name="rem">
+</textarea>
+<!-- Removing the clickme button - it works, and copy and paste is possible -->
+<!-- but it's more work when pasting in the notes.  Copy directly from the text area box! -->
+<!-- <input type="button" value="Click Me" onclick="display();"> -->
+<input type="reset" value="Reset">
+ </form>
+</div>
+<script type="text/javascript">
+function display()
+{
+var x=document.details.fname.value;
+var y=document.details.lname.value;
+var z=document.details.phnum.value;
+var d=document.details.dob.value;
+var s=document.details.ss.value
+var c=document.details.rem.value;
+alert("FIRST NAME:"+x+"     "+"LAST NAME:"+y+"     "+"PHONE NUMBER:"+z+"Date of Birth:"+d+"SS#"+s+"COMMENT:"+c);
+}
+
+
+
+
